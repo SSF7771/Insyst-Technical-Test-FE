@@ -1,4 +1,4 @@
-# Insyst Techincal Test - FE
+# Insyst-Technical-Frontend
 
 ## Setup & Instalasi
 
