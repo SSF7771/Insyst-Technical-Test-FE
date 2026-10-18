@@ -1,0 +1,90 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Meeting Room Alpha",
+      "capacity": 10,
+      "pricePerHour": 150000,
+      "facilities": [
+        "Projector",
+        "Whiteboard",
+        "AC"
+      ],
+      "image": "satu.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Boardroom Beta",
+      "capacity": 6,
+      "pricePerHour": 100000,
+      "facilities": [
+        "TV Screen",
+        "AC"
+      ],
+      "image": "dua.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Conference Hall Gamma",
+      "capacity": 25,
+      "pricePerHour": 350000,
+      "facilities": [
+        "Sound System",
+        "Projector",
+        "AC"
+      ],
+      "image": "tiga.jpg"
+    }
+  ],
+  "slots": [
+    {
+      "id": 1,
+      "roomId": 1,
+      "time": "09:00 - 10:00",
+      "isAvailable": false
+    },
+    {
+      "id": 2,
+      "roomId": 1,
+      "time": "10:00 - 11:00",
+      "isAvailable": true
+    },
+    {
+      "id": 3,
+      "roomId": 1,
+      "time": "13:00 - 14:00",
+      "isAvailable": false
+    },
+    {
+      "id": 4,
+      "roomId": 2,
+      "time": "09:00 - 10:00",
+      "isAvailable": true
+    },
+    {
+      "id": 5,
+      "roomId": 2,
+      "time": "11:00 - 12:00",
+      "isAvailable": true
+    },
+    {
+      "id": 6,
+      "roomId": 3,
+      "time": "13:00 - 15:00",
+      "isAvailable": true
+    }
+  ],
+  "bookings": [
+    {
+      "bookingCode": "BK-JLADRP",
+      "roomId": 1,
+      "slotId": 1,
+      "date": "2026-10-21",
+      "name": "jahsdjdhaskjdsa",
+      "email": "doe@gmail.com",
+      "phone": "089128918290",
+      "participants": 8,
+      "id": 1
+    }
+  ]
+}
