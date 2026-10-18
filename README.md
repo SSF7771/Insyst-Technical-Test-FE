@@ -1,7 +1,5 @@
 # Insyst Techincal Test - FE
 
----
-
 ## Setup & Instalasi
 
 ### 1. Instalasi Dependencies
