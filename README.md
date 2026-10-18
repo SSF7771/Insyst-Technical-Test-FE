@@ -170,3 +170,20 @@ Aplikasi ini ada Step 1 s/d 5 dengan endpoint sebagai berikut:
 - `formData`: Menyimpan input identitas user yang melakukan booking ruangan (`name`, `email`, `phone`, `participants`).
 - `bookingResult`: Menyimpan data respon dari server setelah `POST /bookings` berhasil untuk ditampilkan di Step 5.
 ```
+
+# Penggunaan AI (Artificial Intelligence)
+
+Dalam pengembangan proyek ini, AI dimanfaatkan untuk membantu berbagai aspek teknis dan penyusunan dokumentasi, yang mencakup poin-poin sebagai berikut:
+
+- Membantu merancang tata letak antarmuka bertahap (*multi-step wizard*) menggunakan Tailwind CSS agar intuitif, responsif, dan rapi. Penataan visual mencakup indikator langkah (*header*), kartu pemilihan ruangan interaktif, pemilihan slot waktu berbasis status, formulir data pemesan, ringkasan konfirmasi, hingga kartu penyelesaian (*success card / Step 5*).
+
+- Membantu merancang dan memverifikasi alur logika asinkron pada fungsi `handleSubmitBooking` yang melakukan dua tahap komunikasi API berurutan:
+  1. `POST` ke `/bookings` untuk mencatat transaksi dan menerbitkan kode pemesanan.
+  2. `PATCH` ke `/slots/:id` untuk mengubah status ketersediaan slot (`isAvailable: false`) guna mencegah pemesanan ganda (*double booking*).  
+  AI juga membantu memastikan penanganan *error boundary* dan validasi input (seperti verifikasi format email).
+
+- Membantu menemukan akar masalah hilangnya tampilan Step 5 secara sekilas (halaman kembali ke Step 1). AI membantu mengidentifikasi bahwa perubahan data pada `db.json` oleh `json-server` memicu *hot-reload* otomatis pada Vite, serta memberikan solusi tepat melalui konfigurasi `server.watch.ignored: ['**/db.json']` di `vite.config.js`.
+
+- Membantu membuat data dummy, seperti daftar ruangan dengan spesifikasi kapasitas/harga (`rooms`) dan slot jam yang terhubung via `roomId` (`slots`).
+
+- Membantu merangkum dan menyusun panduan teknis proyek secara terstruktur agar kata-katanya mudah untuk dipahami, mulai dari langkah instalasi, dependensi, spesifikasi endpoint REST API, hingga dokumentasi alur kerja sistem.
