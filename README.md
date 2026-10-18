@@ -169,7 +169,6 @@ Aplikasi ini ada Step 1 s/d 5 dengan endpoint sebagai berikut:
 - `selectedSlot`: Slot jam yang dipilih. Terdapat `useEffect` yang otomatis memilih slot pertama yang berstatus `isAvailable: true`.
 - `formData`: Menyimpan input identitas user yang melakukan booking ruangan (`name`, `email`, `phone`, `participants`).
 - `bookingResult`: Menyimpan data respon dari server setelah `POST /bookings` berhasil untuk ditampilkan di Step 5.
-```
 
 # Penggunaan AI (Artificial Intelligence)
 
