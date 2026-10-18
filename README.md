@@ -181,4 +181,4 @@ Dalam pengembangan proyek ini, AI dimanfaatkan untuk membantu berbagai aspek tek
   AI juga membantu memastikan penanganan *error boundary* dan validasi input (seperti verifikasi format email).
 - Membantu menemukan akar masalah hilangnya tampilan Step 5 secara sekilas (halaman kembali ke Step 1). AI membantu mengidentifikasi bahwa perubahan data pada `db.json` oleh `json-server` memicu *hot-reload* otomatis pada Vite, serta memberikan solusi tepat melalui konfigurasi `server.watch.ignored: ['**/db.json']` di `vite.config.js`.
 - Membantu membuat data dummy, seperti daftar ruangan dengan spesifikasi kapasitas/harga (`rooms`) dan slot jam yang terhubung via `roomId` (`slots`).
-- Menyusun, merapikan, dan memformat teks penjelasan serta instruksi teknis pada file README.md agar mudah dibaca dan dipahami (menghindari miskomunikasi).
+- Menyusun, merapikan, dan memformat teks penjelasan serta instruksi teknis pada file `README.md` agar mudah dibaca dan dipahami (menghindari miskomunikasi).
