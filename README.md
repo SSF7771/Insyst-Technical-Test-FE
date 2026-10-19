@@ -142,18 +142,18 @@ npm run dev
 Aplikasi ini ada Step 1 s/d 5 dengan endpoint sebagai berikut:
 
 ```
-[ Step 1: Pilih Ruangan ]
+Step 1: Pilih Ruangan
   GET /rooms
-[ Step 2: Pilih Jadwal ] 
+Step 2: Pilih Jadwal 
    GET /slots?roomId={id} (Filter slot per ruangan & auto-select)
-[ Step 3: Isi Data Pemesan ] 
+Step 3: Isi Data Pemesan 
   Validasi Form (Nama, Email Regex, Max Capacity)
-[ Step 4: Konfirmasi ] 
+Step 4: Konfirmasi 
   Ringkasan Pesanan & Tombol Bayar
-[ Submit Booking ] 
+Submit Booking 
   1. POST /bookings (Simpan data transaksi)
   2. PATCH /slots/:id (Ubah isAvailable: false)
-[ Step 5: Selesai ] 
+Step 5: Selesai 
   Menampilkan Kode Booking
 ```
 
