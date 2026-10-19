@@ -2,7 +2,13 @@
 
 ## Setup & Instalasi
 
-### 1. Instalasi Dependencies
+### 1. Instalasi Awal dan Dependencies
+Jalankan perintah berikut di direktori root folder untuk membuat template proyek React + JS:
+
+```bash
+npm create vite@latest
+```
+
 Jalankan perintah berikut di direktori root proyek untuk menginstal React, Tailwind CSS, dan dependensi lainnya:
 
 ```bash
